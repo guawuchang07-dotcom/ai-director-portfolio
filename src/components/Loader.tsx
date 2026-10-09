@@ -52,10 +52,12 @@ export default function Loader({ assetsReady, onDone }: { assetsReady: boolean; 
         <span>Zhang Yuanbo</span>
         <span>Portfolio — 2026</span>
       </div>
-      <div className="loader-bar"><i ref={bar} /></div>
+      <div className="loader-center">
+        <div className="loader-count" ref={num}>00</div>
+        <div className="loader-bar"><i ref={bar} /></div>
+      </div>
       <div className="loader-bot">
         <div className="loader-name mono"><span style={{ display: 'inline-block' }}>AI Director &amp; Content Creator<br />Loading showreel…</span></div>
-        <div className="loader-count" ref={num}>00</div>
       </div>
     </div>
   )
